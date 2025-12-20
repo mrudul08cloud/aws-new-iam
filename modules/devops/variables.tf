@@ -1,4 +1,12 @@
+variable "role_name" {
+  description = "IAM role name for DevOps"
+  type        = string
+  default     = "devops-role"
+}
+
 variable "policies" {
+  description = "IAM policies for DevOps role"
+  type        = list(string)
   default = [
     "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy",
     "arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy",
