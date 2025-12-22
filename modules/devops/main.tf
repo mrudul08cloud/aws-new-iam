@@ -5,9 +5,7 @@ resource "aws_iam_role" "this" {
     Version = "2012-10-17"
     Statement = [{
       Effect = "Allow"
-      Principal = {
-        Service = "arn:aws:iam::718159740586:root"
-      }
+      Principal = { Service = "arn:aws:iam::718159740586:root" }
       Action = "sts:AssumeRole"
     }]
   })
