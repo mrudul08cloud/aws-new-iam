@@ -7,7 +7,7 @@ resource "aws_iam_role" "this" {
       {
         Effect = "Allow"
         Principal = {
-          AWS = "arn:aws:iam::718159740586:root"
+          "${var.principal_type}" = var.principal_value
         }
         Action = "sts:AssumeRole"
       }
