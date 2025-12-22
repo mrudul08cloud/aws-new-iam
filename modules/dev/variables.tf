@@ -15,7 +15,7 @@ variable "policies" {
 variable "principal_type" {
   description = "Principal type allowed to assume the role (AWS or Service)"
   type        = string
-  default     = "Service"
+  default     = "AWS"
 }
 
 variable "principal_value" {
