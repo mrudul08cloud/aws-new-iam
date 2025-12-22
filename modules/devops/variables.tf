@@ -26,6 +26,6 @@ variable "principal_type" {
 variable "principal_value" {
   description = "Principal value (AWS ARN or service name)"
   type        = string
-  default     = "ec2.amazonaws.com"
+  default     = "arn:aws:iam::718159740586:root"
 }
 
